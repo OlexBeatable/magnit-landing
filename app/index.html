@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slick.css">
+    <link rel="stylesheet" href="styles/slick-theme.css">
+    <title>Magnit</title>
+</head>
+<body class="body">
+    <header class="header">
+        <div class="content-wrapper">
+            <div class="header__logo-wrapper">
+                <a href="#" aria-label="Магнит Медиа">
+                    <img src="img/logo-header.svg" alt="Магнит Медиа" class="header__logo" loading="lazy">
+                </a>
+            </div>
+            <div class="header__block">
+                <div class="play-button__wrapper">
+                    <div class="play-button">
+                        <img src="img/play.svg" alt="Играть" class="play-button__image play-button__image-play" loading="lazy">
+                        <img src="img/stop.svg" alt="Стоп" class="play-button__image play-button__image-stop play-button__image_hidden" loading="lazy">
+                        <audio class="audio" preload="none">
+                            <source src="https://yumfm.hostingradio.ru:8020/yumfm128.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
+                </div>
+                <div class="header__title-wrapper">
+                    <h1 class="font-header">
+                        РАДИО, ТВ, ПРЯМЫЕ ТРАНСЛЯЦИИ
+                    </h1>
+                </div>
+                <div class="header__social-wrapper">
+                    <div class="header__social">
+                        <a href="#" aria-label="VK">
+                            <img src="img/vk-header.svg" alt="VK" class="header__social__image" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="header__social header__social-inst">
+                        <a href="#" aria-label="Instagram">
+                            <img src="img/instagram-header.svg" alt="Instagram" class="header__social__image" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrapper content-wrapper_mobile">
+            <div class="header__mobile-title-wrapper">
+                <h1 class="font-header">
+                    РАДИО, ТВ, ПРЯМЫЕ ТРАНСЛЯЦИИ
+                </h1>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="content-wrapper">
+            <section class="banner">
+                <div class="banner__image-wrapper">
+                    <img src="img/banner.jpg" alt="Баннер" class="banner__image" loading="lazy">
+                </div>
+            </section>
+            <section class="counter">
+                <div class="counter__heading">
+                    <h1 class="font-counter-h">
+                        ДО НАЧАЛА ТРАНСЛЯЦИИ КОНКУРСА ОСТАЛОСЬ
+                    </h1>
+                </div>
+                <div class="counter__block">
+                    <div class="counter__block__elem">
+                        <div class="counter__number">
+                            <span class="font-counter-numbers" id="days">
+                                00
+                            </span>
+                        </div>
+                        <div class="counter__desc">
+                            <span class="font-counter-desc">
+                                ДНИ
+                            </span>
+                        </div>
+                    </div>
+                    <div class="counter__block__elem">
+                        <div class="counter__number">
+                            <span class="font-counter-separator">
+                                :
+                            </span>
+                        </div>
+                    </div>
+                    <div class="counter__block__elem">
+                        <div class="counter__number">
+                            <span class="font-counter-numbers" id="hours">
+                                00
+                            </span>
+                        </div>
+                        <div class="counter__desc">
+                            <span class="font-counter-desc">
+                                ЧАСЫ
+                            </span>
+                        </div>
+                    </div>
+                    <div class="counter__block__elem">
+                        <div class="counter__number">
+                            <span class="font-counter-separator">
+                                :
+                            </span>
+                        </div>
+                    </div>
+                    <div class="counter__block__elem">
+                        <div class="counter__number">
+                            <span class="font-counter-numbers" id="minutes">
+                                00
+                            </span>
+                        </div>
+                        <div class="counter__desc">
+                            <span class="font-counter-desc">
+                                МИНУТЫ
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="whatsapp">
+                <div class="whatsapp__main">
+                    <div class="whatsapp__date">
+                        <span class="font-date">
+                            <span class="font-date-number">8</span><br>ФЕВРАЛЯ
+                        </span>
+                    </div>
+                    <ul class="whatsapp__list">
+                        <li class="whatsapp__list__item">
+                            <div class="whatsapp__list__item-image-wrapper">
+                                <img src="img/like.svg" alt="like.svg" class="whatsapp__list__item-image" loading="lazy">
+                            </div>
+                            <span class="font-list whatsapp__list__item-text">
+                                <a href="#" aria-label="Проголосуй и поддержи"><span class="font-list-red">Проголосуй и поддержи</span></a><br>свою команду в финале конкурса!
+                            </span>
+                        </li>
+                        <li class="whatsapp__list__item">
+                            <div class="whatsapp__list__item-image-wrapper whatsapp__list__item-image-wrapper_corrected">
+                                <img src="img/megafon.svg" alt="megafon.svg" class="whatsapp__list__item-image" loading="lazy">
+                            </div>
+                            <span class="font-list whatsapp__list__item-text">
+                                Отправь кричалку или слова поддержки на номер WhatsApp <a href="tel:+7-222-222-22-22" class="font-list-red" aria-label="+7-222-222-22-22">+7-222-222-22-22</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="teams">
+                <div class="teams__heading font-h">
+                    КОМАНДЫ
+                </div>
+                <div class="teams__slider-wrapper">
+                    <div class="teams__slider">
+                        <div class="teams__slider__item">
+                            <div class="teams__slider__item__image-wrapper">
+                                <img src="img/slide1.png" alt="ЮЖНЫЙ ОКРУГ" class="teams__slider__item__image" loading="lazy">
+                            </div>
+                            <div class="teams__slider__item__title-wrapper">
+                                <span class="font-teams-slide">
+                                    ЮЖНЫЙ ОКРУГ
+                                </span>
+                            </div>
+                        </div>
+                        <div class="teams__slider__item">
+                            <div class="teams__slider__item__image-wrapper">
+                                <img src="img/slide2.png" alt="ПРИВОЛЖСКИЙ ОКРУГ" class="teams__slider__item__image" loading="lazy">
+                            </div>
+                            <div class="teams__slider__item__title-wrapper">
+                                <span class="font-teams-slide">
+                                    ПРИВОЛЖСКИЙ ОКРУГ
+                                </span>
+                            </div>
+                        </div>
+                        <div class="teams__slider__item">
+                            <div class="teams__slider__item__image-wrapper">
+                                <img src="img/slide3.png" alt="УРАЛЬСКИЙ ОКРУГ" class="teams__slider__item__image" loading="lazy">
+                            </div>
+                            <div class="teams__slider__item__title-wrapper">
+                                <span class="font-teams-slide">
+                                    УРАЛЬСКИЙ ОКРУГ
+                                </span>
+                            </div>
+                        </div>
+                        <div class="teams__slider__item">
+                            <div class="teams__slider__item__image-wrapper">
+                                <img src="img/slide1.png" alt="ЮЖНЫЙ ОКРУГ" class="teams__slider__item__image" loading="lazy">
+                            </div>
+                            <div class="teams__slider__item__title-wrapper">
+                                <span class="font-teams-slide">
+                                    ЮЖНЫЙ ОКРУГ
+                                </span>
+                            </div>
+                        </div>
+                        <div class="teams__slider__item">
+                            <div class="teams__slider__item__image-wrapper">
+                                <img src="img/slide2.png" alt="ПРИВОЛЖСКИЙ ОКРУГ" class="teams__slider__item__image" loading="lazy">
+                            </div>
+                            <div class="teams__slider__item__title-wrapper">
+                                <span class="font-teams-slide">
+                                    ПРИВОЛЖСКИЙ ОКРУГ
+                                </span>
+                            </div>
+                        </div>
+                        <div class="teams__slider__item">
+                            <div class="teams__slider__item__image-wrapper">
+                                <img src="img/slide3.png" alt="УРАЛЬСКИЙ ОКРУГ" class="teams__slider__item__image" loading="lazy">
+                            </div>
+                            <div class="teams__slider__item__title-wrapper">
+                                <span class="font-teams-slide">
+                                    УРАЛЬСКИЙ ОКРУГ
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="steps">
+                <div class="steps__main">
+                    <div class="steps__main__elem">
+                        <div class="steps__main__elem__image-wrapper">
+                            <img src="img/camera.svg" alt="camera.svg" class="steps__main__elem__image" loading="lazy">
+                        </div>
+                        <div class="steps__main__elem__text-wrapper">
+                            <span class="font-steps">
+                                Сделай фото
+                            </span>
+                        </div>
+                    </div>
+                    <div class="steps__main__elem">
+                        <div class="steps__main__elem__image-wrapper">
+                            <img src="img/instagram-compet.svg" alt="instagram-compet.svg" class="steps__main__elem__image" loading="lazy">
+                        </div>
+                        <div class="steps__main__elem__text-wrapper">
+                            <span class="font-steps">
+                                Размести в Instagram<br>с хэштегом<a href="#" class="font-steps-red" aria-label="#МагнитВысшийПилотаж">#МагнитВысшийПилотаж</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="steps__main__elem">
+                        <div class="steps__main__elem__image-wrapper">
+                            <img src="img/microphone.svg" alt="microphone.svg" class="steps__main__elem__image" loading="lazy">
+                        </div>
+                        <div class="steps__main__elem__text-wrapper">
+                            <span class="font-steps">
+                                Попади <a href="#" class="font-steps-red" aria-label="в прямой эфир">в прямой эфир</a><br>трансляции <a href="#" class="font-steps-red" aria-label="8 февраля">8 февраля</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="steps__main__elem">
+                        <div class="steps__main__elem__image-wrapper">
+                            <img src="img/surprise.svg" alt="surprise.svg" class="steps__main__elem__image" loading="lazy">
+                        </div>
+                        <div class="steps__main__elem__text-wrapper">
+                            <span class="font-steps">
+                                Выиграй приз
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="steps__slider-wrapper">
+                    <div class="steps__slider">
+                        <div class="steps__slider__item">
+                            <div class="steps__slider__item__image-wrapper">
+                                <img src="img/slider-woman.jpg" alt="Фото" class="steps__slider__item__image" loading="lazy">
+                            </div>
+                            <div class="steps__slider__item__message-wrapper">
+                                <div class="steps__slider__item__message">
+                                    <div class="steps__slider__item__heading-wrapper">
+                                        <a href="#" class="font-steps-slider-h" aria-label="#МагнитВысшийПилотаж">
+                                            #МагнитВысшийПилотаж
+                                        </a>
+                                    </div>
+                                    <div class="steps__slider__item__message-user">
+                                        <span class="font-steps-slider-bold">
+                                            rtmskfan
+                                        </span>
+                                    </div>
+                                    <div class="steps__slider__item__message-text">
+                                        <span class="font-steps-slider-main">
+                                            Болей за наших! Поддержи сборную!<br>Вперед за победой!<br>Вместе мы непобедимы!
+                                        </span>
+                                    </div>
+                                    <div class="steps__slider__item__message-hashtag">
+                                        <span class="font-steps-slider-bold">
+                                            #р-фарм
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="steps__slider__item">
+                            <div class="steps__slider__item__image-wrapper">
+                                <img src="img/slider-woman.jpg" alt="Фото" class="steps__slider__item__image" loading="lazy">
+                            </div>
+                            <div class="steps__slider__item__message-wrapper">
+                                <div class="steps__slider__item__message">
+                                    <div class="steps__slider__item__heading-wrapper">
+                                        <a href="#" class="font-steps-slider-h" aria-label="#МагнитВысшийПилотаж">
+                                            #МагнитВысшийПилотаж
+                                        </a>
+                                    </div>
+                                    <div class="steps__slider__item__message-user">
+                                        <span class="font-steps-slider-bold">
+                                            rtmskfan
+                                        </span>
+                                    </div>
+                                    <div class="steps__slider__item__message-text">
+                                        <span class="font-steps-slider-main">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dicta natus accusantium nostrum, doloremque repellendus? Placeat quaerat adipisci iusto, laudantium quisquam dolore dignissimos quos, enim quis aliquam odit, labore asperiores?
+                                        </span>
+                                    </div>
+                                    <div class="steps__slider__item__message-hashtag">
+                                        <span class="font-steps-slider-bold">
+                                            #р-фарм
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="steps__slider__item">
+                            <div class="steps__slider__item__image-wrapper">
+                                <img src="img/slider-woman.jpg" alt="Фото" class="steps__slider__item__image" loading="lazy">
+                            </div>
+                            <div class="steps__slider__item__message-wrapper">
+                                <div class="steps__slider__item__message">
+                                    <div class="steps__slider__item__heading-wrapper">
+                                        <a href="#" class="font-steps-slider-h" aria-label="#МагнитВысшийПилотаж">
+                                            #МагнитВысшийПилотаж
+                                        </a>
+                                    </div>
+                                    <div class="steps__slider__item__message-user">
+                                        <span class="font-steps-slider-bold">
+                                            rtmskfan
+                                        </span>
+                                    </div>
+                                    <div class="steps__slider__item__message-text">
+                                        <span class="font-steps-slider-main">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque illum incidunt et natus ratione earum labore delectus numquam, debitis maxime. Laudantium ab dolore ullam distinctio nam sapiente unde vitae atque?
+                                        </span>
+                                    </div>
+                                    <div class="steps__slider__item__message-hashtag">
+                                        <span class="font-steps-slider-bold">
+                                            #р-фарм
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="steps__image-wrapper">
+                    <img src="img/gift.png" alt="gift.png" class="steps__image" loading="lazy">
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="content-wrapper">
+            <div class="footer__block">
+                <div class="footer__copy">
+                    <span class="font-copy">
+                        &copy; Медиапортал вещательной корпорации «Мегаполис Медиа»<br>по заказу сети «Магнит» АО «Тандер»
+                    </span>
+                </div>
+            </div>
+            <div class="footer__block footer__block_absolute">
+                <div class="footer__social-wrapper">
+                    <div class="footer__social">
+                        <a href="#" aria-label="Instagram">
+                            <img src="img/instagram.svg" alt="Instagram" class="footer__social__image" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Facebook">
+                            <img src="img/facebook.svg" alt="Facebook" class="footer__social__image" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="footer__social">
+                        <a href="#" aria-label="VK">
+                            <img src="img/vk-bg.svg" alt="VK" class="footer__social__image" loading="lazy">
+                            <img src="img/vk.svg" alt="VK" class="footer__social__image_absolute" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Telegram">
+                            <img src="img/telegram.svg" alt="Telegram" class="footer__social__image" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__block footer__block-logos">
+                <div class="footer__logo-wrapper">
+                    <a href="#" aria-label="Магнит">
+                        <img src="img/logo-footer.svg" alt="Магнит" class="footer__logo" loading="lazy">
+                    </a>
+                </div>
+                <div class="footer__logo-mm-wrapper">
+                    <a href="#" aria-label="MM">
+                        <img src="img/logo-mm.svg" alt="MM" class="footer__logo-mm" loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.min.js"></script>
+</body>
+</html>

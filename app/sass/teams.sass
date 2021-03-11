@@ -1,0 +1,67 @@
+.teams
+    background-image: url('../img/map.png')
+    background-position: 0 0
+    background-repeat: no-repeat
+    background-size: 1110px 608px
+    padding-top: 76px
+    padding-bottom: 178px
+    margin-bottom: 36px
+    @media screen and ( max-width: 1199.5px )
+        padding-top: 50px
+        padding-bottom: 70px
+        background-size: 100%
+    @media screen and ( max-width: 800px )
+        padding-top: 17px
+        background-size: 590px 323px
+        background-position: center top
+    @media screen and ( max-width: 480px )
+        padding-bottom: 59px
+        margin-bottom: 0
+    
+.teams__heading
+    display: flex
+    justify-content: center
+    margin-bottom: 45px
+    text-align: center
+    @media screen and ( max-width: 800px )
+        margin-bottom: 20px
+
+.teams__slider-wrapper
+    display: flex
+    justify-content: center
+
+.teams__slider
+    width: calc( 100% - 44px )
+    position: relative
+    @media screen and ( max-width: 1199.5px )
+        width: calc( 100% - 174px )
+    @media screen and ( max-width: 991.5px )
+        width: 376px
+    @media screen and ( max-width: 480px )
+        width: 256.94px
+
+.teams__slider__item
+    display: flex
+    flex-direction: column
+    outline: none
+    max-width: 363px
+    padding: 0 6.5px
+    @media screen and ( max-width: 480px )
+        max-width: 243.94px
+        
+
+.teams__slider__item__image-wrapper
+    max-width: 363px
+    max-height: 206px
+    margin-bottom: 26px
+    @media screen and ( max-width: 480px )
+        max-width: 243.94px
+        max-height: 138.4px
+        margin-bottom: 18px
+
+.teams__slider__item__image
+    border-radius: 12px
+
+.teams__slider__item__title-wrapper
+    display: flex
+    justify-content: center

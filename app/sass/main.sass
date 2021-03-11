@@ -1,0 +1,243 @@
+$color-main: #575756
+$color-red: #E30613
+$color-gray: #FAFAFA
+$color-vinous: #6A0F2C
+$color-gray-date: #EFEFEF
+$color-black: #000000
+
+@font-face
+    font-family: 'Geometria'
+    src: url('fonts/Geometria.eot')
+    src: url('fonts/Geometria.eot?#iefix') format('embedded-opentype'), url('fonts/Geometria.woff') format('woff'), url('fonts/Geometria.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+
+@font-face
+    font-family: 'Geometria Bold'
+    src: url('fonts/Geometria-Bold.eot')
+    src: url('fonts/Geometria-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/Geometria-Bold.woff') format('woff'), url('fonts/Geometria-Bold.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+
+@font-face
+    font-family: 'Geometria Extra Bold'
+    src: url('fonts/Geometria-ExtraBold.eot')
+    src: url('fonts/Geometria-ExtraBold.eot?#iefix') format('embedded-opentype'), url('fonts/Geometria-ExtraBold.woff') format('woff'), url('fonts/Geometria-ExtraBold.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+
+@mixin font($fsize, $color,)
+    font-family: 'Geometria'
+    font-size: $fsize
+    color: $color
+
+@mixin font-bold($fsize, $color,)
+    font-family: 'Geometria Bold'
+    font-size: $fsize
+    color: $color
+
+@mixin font-extrabold($fsize, $color,)
+    font-family: 'Geometria Extra Bold'
+    font-size: $fsize
+    color: $color
+
+@mixin slider-align()
+    justify-content: center
+    & .content-wrapper
+        justify-content: center
+        margin: 0 auto
+
+@import 'header'
+@import 'play-button'
+@import 'banner'
+@import 'counter'
+@import 'whatsapp'
+@import 'teams'
+@import 'slick-arrow'
+@import 'steps'
+@import 'footer'
+
+.font-header
+    @include font-bold(22px, $color-main)
+    @media screen and ( max-width: 768px )
+        font-size: 12px
+    @media screen and ( max-width: 480px )
+        font-size: 9px
+
+.font-counter-h
+    @include font(30px, $color-vinous)
+    @media screen and ( max-width: 1024px )
+        @include font(20px, $color-vinous)
+    @media screen and ( max-width: 768px )
+        @include font(16px, $color-vinous)
+    @media screen and ( max-width: 480px )
+        @include font(12px, $color-vinous)
+    @media screen and ( max-width: 360px )
+        @include font(9px, $color-vinous)
+
+.font-counter-desc
+    @include font(20px, $color-vinous)
+    @media screen and ( max-width: 768px )
+        @include font(16px, $color-vinous)
+    @media screen and ( max-width: 480px )
+        @include font(12px, $color-vinous)
+    @media screen and ( max-width: 360px )
+        @include font(8px, $color-vinous)
+
+.font-counter-numbers
+    @include font-extrabold(110px, $color-red)
+    @media screen and ( max-width: 768px )
+        @include font-extrabold(55px, $color-red)
+    @media screen and ( max-width: 480px )
+        @include font-extrabold(40px, $color-red)
+
+.font-counter-separator
+    @include font-bold(75px, $color-red)
+    margin: 6px 18px 0 18px
+    @media screen and ( max-width: 768px )
+        @include font-bold(37.5px, $color-red)
+    @media screen and ( max-width: 480px )
+        @include font-bold(20px, $color-red)
+        margin: 6px 8px 0 8px
+        
+.font-list
+    @include font(20px, $color-main)
+    line-height: 29px
+    @media screen and ( max-width: 800px )
+        @include font(3.125vw, $color-main)
+        line-height: 4.375vw
+
+.font-list-red
+    @include font-bold(20px, $color-red)
+    letter-spacing: 0.2px
+    @media screen and ( max-width: 800px )
+        @include font-bold(3.125vw, $color-red)
+
+.font-date
+    @include font-extrabold(100px, $color-gray-date)
+    line-height: 107px
+    @media screen and ( max-width: 800px )
+        @include font-extrabold(6.3vw, $color-gray-date)
+        line-height: 11vw
+
+.font-date-number
+    @include font-extrabold(300px, $color-gray-date)
+    @media screen and ( max-width: 800px )
+        @include font-extrabold(34.375vw, $color-gray-date)
+  
+.font-h
+    @include font-bold(40px, $color-main)
+    @media screen and ( max-width: 800px )
+        @include font-bold(26px, $color-main)
+
+.font-teams-slide
+    @include font-bold(20px, $color-main)
+    @media screen and ( max-width: 480px )
+        @include font-bold(16px, $color-main)
+
+.font-steps
+    @include font-bold(20px, $color-black)
+    @media screen and ( max-width: 1199.5px )
+        @include font-bold(16px, $color-black)
+    @media screen and ( max-width: 480px )
+        @include font-bold(3.75vw, $color-black)
+
+.font-steps-red
+    @include font-bold(20px, $color-red)
+    @media screen and ( max-width: 1199.5px )
+        @include font-bold(16px, $color-red)
+    @media screen and ( max-width: 480px )
+        @include font-bold(3.75vw, $color-red)
+
+.font-steps-slider-h
+    @include font-bold(26px, $color-red)
+    @media screen and ( max-width: 991.5px )
+        @include font-bold(18px, $color-red)
+    @media screen and ( max-width: 480px )
+        @include font-bold(14px, $color-red)
+        
+
+.font-steps-slider-bold
+    @include font-bold(16px, $color-black)
+    @media screen and ( max-width: 991.5px )
+        @include font-bold(12px, $color-black)
+    @media screen and ( max-width: 991.5px )
+        @include font-bold(10px, $color-black)
+
+.font-steps-slider-main
+    max-height: 120px
+    overflow: hidden
+    text-overflow: ellipsis
+    display: -webkit-box
+    -webkit-line-clamp: 6
+    -webkit-box-orient: vertical
+    @include font(16px, $color-black)
+    @media screen and ( max-width: 991.5px )
+        @include font(12px, $color-black)
+    @media screen and ( max-width: 991.5px )
+        @include font(10px, $color-black)
+
+.font-copy
+    @include font(12px, $color-black)
+    @media screen and ( max-width: 1199.5px )
+        @include font(10px, $color-black)
+    @media screen and ( max-width: 360px )
+        @include font(7px, $color-black)
+        
+/* TODO */
+div
+    display: flex
+
+.body
+    @extend div
+    margin: 0
+    padding: 0
+    justify-content: center
+    flex-direction: column
+    font-size: 12px
+    @media screen and ( max-width: 480px )
+        &::-webkit-scrollbar
+            width: 0
+
+.main, .header, .footer
+    @extend div
+    justify-content: center
+
+a
+    text-decoration: none
+
+img
+    width: 100%
+    height: 100%
+    object-fit: contain
+
+h1
+    margin: 0
+
+ul, li
+    margin: 0
+    padding: 0
+
+ul
+    list-style: none
+
+.content-wrapper
+    width: 100%
+    padding: 0 15px
+    box-sizing: border-box
+    @media screen and (min-width: 576px)
+        max-width: 625px
+    @media screen and (min-width: 768px)
+        max-width: 815px
+    @media screen and (min-width: 992px)
+        max-width: 955px
+    @media screen and (min-width: 1200px)
+        max-width: 1170px
+        padding: 0     
+
+.content-wrapper_mobile
+    @media screen and ( min-width: 1199px )
+        display: none
+
+.main .content-wrapper
+    flex-direction: column
